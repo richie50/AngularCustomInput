@@ -1,0 +1,12 @@
+
+
+    <div *ngIf="express">
+        First name: <input (keyup)="emitEvent($event)" [id]="controlPath" type="text" name="fname" [formControl]="control" ><br>
+        Last name: <input type="text" name="lname"><br>
+        <ul>
+            <li *ngFor="let car of cars">{{car}}</li>
+        </ul>
+    </div>
+
+   
+  
